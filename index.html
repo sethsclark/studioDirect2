@@ -1,0 +1,356 @@
+<!doctype html>
+<html class="no-js" lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Studio Direct</title>
+      <link rel="stylesheet" href="css/foundation.css" />
+      <script src="js/vendor/modernizr.js"></script>
+      <script src="js/vendor/jquery.js"></script>
+      <script src="js/foundation.min.js"></script>
+      <script src="js/coverImgScripts.js"></script>
+      <script src="js/appearOnHover.js"></script>
+      <script src="js/lightBox.js"></script>
+      <script src="js/scrollMenu.js"></script>
+      <script src="js/simpleSlideShow.js"></script>
+      <script src="js/menuBehavior.js"></script>
+      <!-- this links to the new custom css-->
+      <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400italic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="css/app.css">
+      <!-- for the accordian action on the patron and artist page --> 
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+      <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+      
+      
+   </head>
+   <body onresize="onResize()">
+      <img src="img/background/arrow_Left.png"  class="arrow left" id= "arrowLeft">
+      <img src="img/background/arrow_Right.png" class="arrow right" id= "arrowRight">
+      <div id = "scrollToMe" > </div>
+      <!-- the Hover text --!>
+      <div class ="hoverText">
+         <center>
+            <p style = "display:none;" class = "hover patrons">
+               Invest in Creativity. 
+            </p>
+            <p style = "display:none;" class = "hover model">
+               How it Works. 
+            </p>
+            <p style = "display:none;" class = "hover artists">
+               Sustain your Studio Practice.
+            </p>
+         </center>
+      </div>
+       <div class=" scrollOverBody off-canvas-wrap" data-offcanvas> 
+      	<div class=" inner-wrap" id="scrollOverBody">
+      	
+      	
+      	<!-- this is the side nav for when the screen is small -->
+      	<aside class="right-off-canvas-menu">
+        			
+        			<ul class="off-canvas-list">
+          			<li><a class="info"><img src="img/icons_grey/info.png">Info</a></li>
+          			<li><a href="mailto:info@studiodirect.com"><img src="img/icons_grey/mail.png">Mail</a></li>
+          			<li><a href="http://www.facebook.com/" target="_blank"><img src="img/icons_grey/facebook.png">Facebook</a></li>
+        			</ul>
+    	</aside>
+      <div id="menu-outer" class="sticky">
+         <nav class="top-bar" data-topbar role="navigation"  >
+            <div class="icons">
+               <a><img src="img/icons/info.png" class ="info icon"></a>
+               <a href="mailto:info@studiodirect.com"><img src="img/icons/mail.png" class ="icon"></a>
+               <a href="http://www.facebook.com/" target="_blank"><img src="img/icons/facebook.png" class ="icon"></a>
+               <a class="right-off-canvas-toggle" href="#"><img src="img/icons/hamburger.png" class ="hamburger" ></a>
+               
+               
+            </div>
+            <div class="table">
+               <ul id="horizontal-list">
+                  <li><a href="#" class="button" id ="artists">ARTISTS</a></li>
+                  <li><a href="#" class="button" id ="model">THE MODEL</a></li>
+                  <li><a href="#" class="button" id ="patrons">PARTRONS</a></li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      
+      <!-- info window --!>
+     <div id ='info' style = "display:none;">
+            <div class="overlay" ></div>
+            <div class='bubble'  style="display:block;">
+               <img onclick="closeInfoWindow();" class='cross' src="cross.png" style='cursor: pointer;'>
+               <div class='about'>
+                  <p style =' margin-left:30px; margin-top:30px;' >This soundmap is a sampling of sounds recorded locally by sound artist Abby Aresty, in preparation for her new installation for the Center for Sustainable Landscapes (CSL).  Of Earth and Sun is a yearlong, generative sound art installation composed from natural soundscapes recorded throughout Pittsburgh, and driven by the same elements which power the CSL.  The work will evolve throughout the day, change with the seasons, and will transform with the weather.  Aresty moved to Pittsburgh in July 2013 to begin working on the project, and has been gathering the sounds of Pittsburgh ever since.  Additional sounds will be added to the map over the course of the project's development.</p>
+               </div>
+            </div>
+         </div>
+         
+      <div class="content">
+      <div class="modelContent">
+         
+         <div class="row">
+            <div class="large-12 columns">
+               <h1> A NEW ARTIST TO PATRON MODEL</h1>
+            </div>
+         </div>
+         <div class="row">
+            <div class="large-12 columns">
+               <div class="panel">
+                  <hr>
+                  <div class = "slideshow" >
+                     <img src="img/theModel_Assets/slideshow/img1_hands.jpg" id = "slideshow">
+                  </div>
+                  <hr>
+                  <h3>
+                     Artists struggle to find time to create work early on in their careers. At the start of 2014, I asked 8 local Art Patrons to help me with this problem. Studio Direct has allowed me to have a thriving studio practice, garner new patrons, expand my professional network, feel confident with my pricing, all while preserving my current and future gallery relationships. I want to share this thing with you, here is my digital overview:
+                  </h3>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="large-12 columns">
+               <h1> THE DIGITAL OVERVIEW</h1>
+            </div>
+         </div>
+         <div class="row">
+            <div class="large-12 columns">
+               <div class="panel">
+                  <hr>
+                  <h3>
+                     Justo sit amet massa lacinia maximus. Maecenas accumsan neque nibh, a ultricies eros rhoncus non. In lobortis valiquet orci in vulputate. Cras nulla turpis, ultricies id viverra ac, sollicitudin auctor nunc. Curabitur fermentum iaculis lacus et laoreet.
+                  </h3>
+                  <img src="img/theModel_Assets/img2_book.png" >
+                  <h2>
+                     INVESTING IN CREATIVITY
+                  </h2>
+                  <!-- column 1 for invest in creativity --> 
+                  <div class="large-6 medium-6 columns">
+                     <h4>
+                        Introducing STUDIO DIRECT: Your chance to support an emerging local artist, to endorse creative pursuit, and to ensure that you are getting the year’s only direct discount on my artwork. STUDIO DIRECT brings together a small community of people eager to invest in art in a new & exciting way. 
+                     </h4>
+                  </div>
+                  <!-- column 2 for invest in creativity --> 
+                  <div class="large-6 medium-6 columns">
+                     <h4>
+                        At the start of 2014, I will be pre-selling eight paintings. This funding will provide me with the foundation needed for a dedicated studio practice. As a partner, you will get to visit my studio while I’m working on your piece and become a participant in my creative process. <br> <br> Together, we will increase the value of your investment through a year of creative possibility.
+                     </h4>
+                  </div>
+                  <hr>
+                  
+                  <h2>
+                     STRUCTURE
+                  </h2>
+                  <h5> 
+                  Okay, so how does this work? 
+                  </h5>
+                  
+                    <!-- column 1 for invest in creativity --> 
+                  <div class="large-6 medium-6 columns">
+                     <h6>1 ARTIST</h6>
+                     <h4>Seth Clark</h4>
+                     <br>
+                     <h6>1 YEAR</h6>
+                     <h4>2014</h4>
+                     <br>
+                     <h6>1 COST</h6>
+                     <h4>Comprised of 8 Local Patrons</h4>
+                     <br>
+                     <h6>1 GOAL</h6>
+                     <h4>To keep me focused on my studio practice</h4>
+                     <br>
+                     <h6>THE DETAILS</h6>
+                     <h4>8 Paintings Available at $2,500 each <br>Retail Value: $3,500 - $4,000 <br>Average Size: 9 square ft. (e.g. 36” x 36”) <br>Patron Discount: 30% - 40%
+					</h4>
+                  </div>
+                  <!-- column 2 for invest in creativity --> 
+                  <div class="large-6 medium-6 columns">
+                     <h6>YOUR PAINTING</h6>
+                     <h4>
+						Please understand, this is not a commission.
+						We will have an initial conversation about my work and assess what you like. From there, I will do my very best to ensure that you receive a painting that you are happy with. 
+                     </h4>
+                     <h6>THE RESULT</h6>
+                     <h4>
+                     Your return will come in two forms: a painting made during this unique yearlong program, and the increased value of said painting in the aftermath of our successful partnership. The year will culminate in an independently organized exhibit that showcases the 8 paintings amongst a much larger body of work. 
+                     </h4>
+                  </div>
+                  <hr>
+                  
+                  <img src="img/theModel_Assets/img3_packet.png" >
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="patronsContent" style = "display:none;" >
+      <div class="row">
+         <div class="large-12 columns">
+            <h1>SPEND MORE TIME MAKING WORK</h1>
+         </div>
+      </div>
+      <div class="row">
+         <div class="large-12 columns">
+            <div class="panel">
+               <hr>
+               <div class="large-6 medium-6 columns">
+                  <h4>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </h4>
+               </div>
+               <div class="large-6 medium-6 columns">
+                  <h4>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </h4>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+      <div class="large-12 columns">
+         <div class="panel">
+         	
+            <dl class="accordion" data-accordion>
+               <dd class="accordion-navigation">
+               
+                  <a href="#panel5">
+                     <h1 >BUILD RELATIONSHIPS WITH NEW PATRONS</h1>
+                  </a>
+                  
+                     <div id="panel5" class="content">
+                        <hr>
+                        <h3>   
+                           Panel 5. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </h3>
+                     </div>
+                  
+               </dd>
+               <dd class="accordion-navigation">
+                  <a href="#panel6">
+                     <h1>BROADEN YOUR PROFESSIONAL NETWORK</h1>
+                  </a>
+                  <div id="panel6" class="content">
+                  	<hr>
+                        <h3>
+                     Panel 6. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  		</h3>
+                  </div>
+               </dd>
+               <dd class="accordion-navigation">
+                  <a href="#panel7">
+                     <h1>BE CONFIDENT WITH YOUR PRICING</h1>
+                  </a>
+                  <div id="panel7" class="content">
+                  	<hr>
+                        <h3>
+                     Panel 7. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  	</h3>
+                  </div>
+               </dd>
+               <dd class="accordion-navigation">
+                  <a href="#panel8">
+                     <h1>PRESERVE GALLERY RELATIONSHIPS</h1>
+                  </a>
+                  <div id="panel8" class="content">
+                  	<hr>
+                    <h3>
+                     Panel 8. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  	</h3>
+                  </div>
+               </dd>
+            </dl>
+            
+        </div>
+    </div>
+</div>
+      </div> <!-- ending the artistsContent div tag. --!>
+      <div class="artistsContent" style = "display:none;" >
+      <div class="row">
+         <div class="large-12 columns">
+            <h1>SPEND MORE TIME MAKING WORK</h1>
+         </div>
+      </div>
+      <div class="row">
+         <div class="large-12 columns">
+            <div class="panel">
+               <hr>
+               <div class="large-6 medium-6 columns">
+                  <h4>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </h4>
+               </div>
+               <div class="large-6 medium-6 columns">
+                  <h4>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </h4>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+      <div class="large-12 columns">
+         <div class="panel">
+         	
+            <dl class="accordion" data-accordion>
+               <dd class="accordion-navigation">
+               
+                  <a href="#panel1">
+                     <h1 >BUILD RELATIONSHIPS WITH NEW PATRONS</h1>
+                  </a>
+                  
+                     <div id="panel1" class="content">
+                        <hr>
+                        <h3>   
+                           Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </h3>
+                     </div>
+                  
+               </dd>
+               <dd class="accordion-navigation">
+                  <a href="#panel2">
+                     <h1>BROADEN YOUR PROFESSIONAL NETWORK</h1>
+                  </a>
+                  <div id="panel2" class="content">
+                  	<hr>
+                        <h3>
+                     Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  		</h3>
+                  </div>
+               </dd>
+               <dd class="accordion-navigation">
+                  <a href="#panel3">
+                     <h1>BE CONFIDENT WITH YOUR PRICING</h1>
+                  </a>
+                  <div id="panel3" class="content">
+                  	<hr>
+                        <h3>
+                     Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  	</h3>
+                  </div>
+               </dd>
+               <dd class="accordion-navigation">
+                  <a href="#panel4">
+                     <h1>PRESERVE GALLERY RELATIONSHIPS</h1>
+                  </a>
+                  <div id="panel4" class="content">
+                  	<hr>
+                    <h3>
+                     Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  	</h3>
+                  </div>
+               </dd>
+            </dl>
+            
+        </div>
+    </div>
+</div>
+      </div> <!-- ending the artistsContent div tag. --!>
+      </div> <!-- ending the content div tag. --!>
+      <a class="exit-off-canvas"></a>
+      </div> <!-- ending of inner wrap --!> 
+     </div> <!-- ending the scrollOverBody div tag. --!>
+      <script src="js/hamburger.js"></script>
+      <script>
+         $(document).foundation();
+      </script>
+   </body>
+</html>

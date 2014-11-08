@@ -1,0 +1,260 @@
+* { margin: 0; padding: 0; }
+		
+		html { 
+			background: url(../img/background/BackGroundImg1.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+
+body{
+	/* Overriding the foundation css so that the studio direct image in visible */
+	background-color:transparent;
+	
+}	
+
+
+/* big centers*/ 
+
+h1{
+	font-family: 'Open Sans', sans-serif;  
+	font-size: 2.2em;
+	font-weight:bold;
+	text-align: center; 
+	margin-top: 20px; 
+} 
+/*sub heading*/ 
+h2{
+	font-family: 'Open Sans', sans-serif;  
+	font-weight:bold;
+	font-size: 1.5em;
+} 
+/*bold body text*/ 
+
+h3{
+	font-family: 'Open Sans', sans-serif;  
+	font-size: 15px;
+	font-weight:bold;
+	font-size: 1em;
+} 
+
+/*regular body text*/ 
+
+
+h4 {
+	font-family: 'Open Sans', sans-serif;  
+	font-size: 0.80em;
+} 
+/*italic subtext*/ 
+
+h5{
+	font-family: 'Open Sans', sans-serif;  
+	font-size: 1.1em;
+	font-style: italic;
+	
+}
+
+/*extra bold sub, sub headings*/ 
+
+h6{
+	font-family: 'Open Sans', sans-serif;  
+	font-size: .7em;
+	/* indicates extra bold*/ 
+	font-weight:800;
+	margin-bottom:.2rem; !important; 
+} 
+
+hr {
+	
+	border: none;
+    height: 5px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+} 
+
+
+.hoverText{
+	position:relative; 
+	height:50px; 
+	top:87%;
+	background-color: rgba(100%, 100%, 100%, 0.3);
+}
+
+.hover{
+	font-family: 'Noto Serif', serif;    
+	font-size: 25px;
+	font-style: italic;
+}
+
+
+
+#scrollToMe{
+	position:relative; 
+	top:60%; 
+	width: 0px;
+	height: 0px;  
+
+}
+
+
+.scrollOverBody{
+	background-color:white;
+	position:relative; 
+	top:100%; 
+	width: auto; 
+	/* this is the sum of the height of hover text and the height of the navigation bar*/ 
+	margin-top: -95px; 
+} 
+
+
+
+.arrow {
+position:fixed;
+top: 40%;
+width:2%; 
+min-width: 10px; 
+height:auto; 
+-webkit-filter: opacity(.2);
+filter: opacity(.2);
+
+} 
+
+.arrow:hover{
+	filter: contrast(20px);
+	border:1px; 
+	-webkit-filter: opacity(.5);
+	filter: opacity(.5);
+} 
+
+.left{
+left:2%;
+}
+
+
+.right{
+ left:96%; 
+}
+
+
+
+#menu-outer {
+	text-align: center;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.icons{
+	position:absolute;
+	right:1%; 
+} 
+
+
+.icon{
+	margin-left:2px; 
+	margin-right:2px; 
+	vertical-align: middle;
+}
+
+.hamburger{
+	vertical-align: middle;
+	margin-right:10px; 
+}
+
+.table {
+	display: table;
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	/*min-width: 696px;*/
+	list-style: none;
+	display: inline;
+	-webkit-padding-start: 0px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
+	
+nav.top-bar{
+	background-color:white;
+}
+
+.button {
+	background-color:white;
+	color:black;
+	font-family: 'Open Sans', sans-serif;  
+	top:0px; !important;
+	font-size: 12px !important;
+	height:100%; !important;
+	
+	}
+	
+ 
+
+.button:hover{
+	background-color:white;
+	color:black;
+	font-family: 'Open Sans', sans-serif;  
+	font-size: 12px;
+	font-weight:800;
+	
+} 
+
+	
+.about p{
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:12px;
+  margin-right:15px;
+  margin-top:13px;
+  color:#000000;
+}
+
+.bubble 
+{
+position: fixed;
+left: 10%;
+top:10%;
+width: 80%;
+height: 80%;
+padding: 1px;
+background: #fff;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+z-index:3001;
+}
+
+.cross{
+  width:12px;
+  height:12px;
+  float:right;
+  margin-right:10px;
+  margin-top:10px;
+}	
+
+.overlay {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:#000;
+    opacity:0.3;
+    display:block;
+    z-index:3000;
+}
+
+.content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  
+
