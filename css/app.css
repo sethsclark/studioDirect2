@@ -66,6 +66,22 @@ h6{
 	margin-bottom:.2rem; !important; 
 } 
 
+
+.accordionHeader{
+	font-size: 2em;
+} 
+
+.accordionLine{
+	/*display:none;*/
+	margin-top:0px;
+}
+
+a:hover + div{
+	display:block;
+}
+
+
+
 hr {
 	
 	border: none;
@@ -76,20 +92,13 @@ hr {
 } 
 
 
-.hoverText{
-	position:relative; 
-	height:50px; 
-	top:87%;
-	background-color: rgba(100%, 100%, 100%, 0.3);
-}
+
 
 .hover{
 	font-family: 'Noto Serif', serif;    
 	font-size: 25px;
 	font-style: italic;
 }
-
-
 
 #scrollToMe{
 	position:relative; 
@@ -100,13 +109,27 @@ hr {
 }
 
 
+.hoverText{
+	position:relative; 
+	height:50px; 
+	top:100%;
+	width:400px;
+	margin-left:auto; 
+	margin-right:auto; 
+	margin-top:-95px;
+}
+
+.foggyBackground{
+	background-color: rgba(100%, 100%, 100%, 0.5);
+} 
+
+
 .scrollOverBody{
 	background-color:white;
 	position:relative; 
 	top:100%; 
 	width: auto; 
-	/* this is the sum of the height of hover text and the height of the navigation bar*/ 
-	margin-top: -95px; 
+	/* this is the sum of the height of hover text and the height of the navigation bar -95*/ 
 } 
 
 
@@ -139,12 +162,12 @@ left:2%;
 }
 
 
-
+/* right, down, amount of blur, border all around border*/ 
 #menu-outer {
 	text-align: center;
-	-webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
+	-webkit-box-shadow: 0 10px 20px -8px #d8d7d7;
+	   -moz-box-shadow: 0 10px 20px -8px #d8d7d7;
+	        box-shadow: 0 10px 20px -8px #d8d7d7;
 }
 
 .icons{
@@ -201,7 +224,15 @@ nav.top-bar{
 	font-family: 'Open Sans', sans-serif;  
 	font-size: 12px;
 	font-weight:800;
-	
+} 
+
+
+.active{
+	background-color:white;
+	color:black;
+	font-family: 'Open Sans', sans-serif;  
+	font-size: 12px;
+	font-weight:800;
 } 
 
 	
@@ -224,19 +255,43 @@ width: 80%;
 height: 80%;
 padding: 1px;
 background: #fff;
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
 border-radius: 10px;
 z-index:3001;
 }
 
+
+.content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+
+/* Light box styling */
+
+  .about{
+  margin-left:40px; 
+  margin-top:40px;
+} 
+
 .cross{
   width:12px;
-  height:12px;
+  height:auto;
   float:right;
   margin-right:10px;
   margin-top:10px;
+  -webkit-filter: opacity(.2);
+  filter: opacity(.2);
 }	
+
+.cross:hover{
+	filter: contrast(20px);
+	border:1px; 
+	-webkit-filter: opacity(.5);
+	filter: opacity(.5);
+}
 
 .overlay {
     position:fixed;
@@ -249,12 +304,5 @@ z-index:3001;
     display:block;
     z-index:3000;
 }
-
-.content img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
-  
   
 

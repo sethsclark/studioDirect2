@@ -67,9 +67,9 @@
             </div>
             <div class="table">
                <ul id="horizontal-list">
-                  <li><a href="#" class="button" id ="artists">ARTISTS</a></li>
-                  <li><a href="#" class="button" id ="model">THE MODEL</a></li>
-                  <li><a href="#" class="button" id ="patrons">PARTRONS</a></li>
+                  <li><a href="#" class="button artistsButton">ARTISTS</a></li>
+                  <li><a href="#" class="button modelButton active">THE MODEL</a></li>
+                  <li><a href="#" class="button patronsButton">PATRONS</a></li>
                </ul>
             </div>
          </nav>
@@ -79,9 +79,13 @@
      <div id ='info' style = "display:none;">
             <div class="overlay" ></div>
             <div class='bubble'  style="display:block;">
-               <img onclick="closeInfoWindow();" class='cross' src="cross.png" style='cursor: pointer;'>
+               <img onclick="closeInfoWindow();" class='cross' src="img/icons/infoCross.png" style='cursor: pointer;'>
                <div class='about'>
-                  <p style =' margin-left:30px; margin-top:30px;' >This soundmap is a sampling of sounds recorded locally by sound artist Abby Aresty, in preparation for her new installation for the Center for Sustainable Landscapes (CSL).  Of Earth and Sun is a yearlong, generative sound art installation composed from natural soundscapes recorded throughout Pittsburgh, and driven by the same elements which power the CSL.  The work will evolve throughout the day, change with the seasons, and will transform with the weather.  Aresty moved to Pittsburgh in July 2013 to begin working on the project, and has been gathering the sounds of Pittsburgh ever since.  Additional sounds will be added to the map over the course of the project's development.</p>
+               <h2> What is Studio Direct? </h2>
+               <br>
+               <h4>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+               </h4>
                </div>
             </div>
          </div>
@@ -91,7 +95,7 @@
          
          <div class="row">
             <div class="large-12 columns">
-               <h1> A NEW ARTIST TO PATRON MODEL</h1>
+               <h1 > A NEW ARTIST TO PATRON MODEL</h1>
             </div>
          </div>
          <div class="row">
@@ -101,7 +105,7 @@
                   <div class = "slideshow" >
                      <img src="img/theModel_Assets/slideshow/img1_hands.jpg" id = "slideshow">
                   </div>
-                  <hr>
+                  <hr style="margin-top:0px;">
                   <h3>
                      Artists struggle to find time to create work early on in their careers. At the start of 2014, I asked 8 local Art Patrons to help me with this problem. Studio Direct has allowed me to have a thriving studio practice, garner new patrons, expand my professional network, feel confident with my pricing, all while preserving my current and future gallery relationships. I want to share this thing with you, here is my digital overview:
                   </h3>
@@ -185,7 +189,7 @@
       <div class="patronsContent" style = "display:none;" >
       <div class="row">
          <div class="large-12 columns">
-            <h1>SPEND MORE TIME MAKING WORK</h1>
+            <h1 class= "accordionHeader">SPEND MORE TIME MAKING WORK</h1>
          </div>
       </div>
       <div class="row">
@@ -213,7 +217,7 @@
                <dd class="accordion-navigation">
                
                   <a href="#panel5">
-                     <h1 >BUILD RELATIONSHIPS WITH NEW PATRONS</h1>
+                     <h1 class= "accordionHeader" >BUILD RELATIONSHIPS WITH NEW PATRONS</h1>
                   </a>
                   
                      <div id="panel5" class="content">
@@ -226,7 +230,7 @@
                </dd>
                <dd class="accordion-navigation">
                   <a href="#panel6">
-                     <h1>BROADEN YOUR PROFESSIONAL NETWORK</h1>
+                     <h1 class= "accordionHeader">BROADEN YOUR PROFESSIONAL NETWORK</h1>
                   </a>
                   <div id="panel6" class="content">
                   	<hr>
@@ -237,7 +241,7 @@
                </dd>
                <dd class="accordion-navigation">
                   <a href="#panel7">
-                     <h1>BE CONFIDENT WITH YOUR PRICING</h1>
+                     <h1 class= "accordionHeader">BE CONFIDENT WITH YOUR PRICING</h1>
                   </a>
                   <div id="panel7" class="content">
                   	<hr>
@@ -248,7 +252,7 @@
                </dd>
                <dd class="accordion-navigation">
                   <a href="#panel8">
-                     <h1>PRESERVE GALLERY RELATIONSHIPS</h1>
+                     <h1 class= "accordionHeader">PRESERVE GALLERY RELATIONSHIPS</h1>
                   </a>
                   <div id="panel8" class="content">
                   	<hr>
@@ -266,7 +270,7 @@
       <div class="artistsContent" style = "display:none;" >
       <div class="row">
          <div class="large-12 columns">
-            <h1>SPEND MORE TIME MAKING WORK</h1>
+            <h1 class= "accordionHeader">SPEND MORE TIME MAKING WORK</h1>
          </div>
       </div>
       <div class="row">
@@ -293,12 +297,14 @@
             <dl class="accordion" data-accordion>
                <dd class="accordion-navigation">
                
-                  <a href="#panel1">
-                     <h1 >BUILD RELATIONSHIPS WITH NEW PATRONS</h1>
+                  <a href="#panel1" class="hoverOver">
+                     <h1 class= "accordionHeader">BUILD RELATIONSHIPS WITH NEW PATRONS</h1>
                   </a>
-                  
+                  <div class="accordionLine">
+                  	<hr > 
+                  </div>
                      <div id="panel1" class="content">
-                        <hr>
+                        
                         <h3>   
                            Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </h3>
@@ -307,7 +313,7 @@
                </dd>
                <dd class="accordion-navigation">
                   <a href="#panel2">
-                     <h1>BROADEN YOUR PROFESSIONAL NETWORK</h1>
+                     <h1 class= "accordionHeader">BROADEN YOUR PROFESSIONAL NETWORK</h1>
                   </a>
                   <div id="panel2" class="content">
                   	<hr>
@@ -318,7 +324,7 @@
                </dd>
                <dd class="accordion-navigation">
                   <a href="#panel3">
-                     <h1>BE CONFIDENT WITH YOUR PRICING</h1>
+                     <h1 class= "accordionHeader">BE CONFIDENT WITH YOUR PRICING</h1>
                   </a>
                   <div id="panel3" class="content">
                   	<hr>
@@ -329,7 +335,7 @@
                </dd>
                <dd class="accordion-navigation">
                   <a href="#panel4">
-                     <h1>PRESERVE GALLERY RELATIONSHIPS</h1>
+                     <h1 class= "accordionHeader">PRESERVE GALLERY RELATIONSHIPS</h1>
                   </a>
                   <div id="panel4" class="content">
                   	<hr>

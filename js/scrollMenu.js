@@ -1,5 +1,5 @@
         $(document).ready(function (){
-            $("#model, #artists, #patrons").click(function (){	
+            $(".button").click(function (){	
             	$('html, body').animate({
     			scrollTop: $("#scrollToMe").offset().top
 				}, 1000);  

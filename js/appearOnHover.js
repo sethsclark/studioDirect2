@@ -1,27 +1,34 @@
 
-$(function(){
+// hover text and foggy background. 
 
+
+$(function(){
 	 
-	 
-	  $('#artists').mouseenter(function () {
+	  $('.artistsButton').mouseenter(function () {
             $('.artists').show();
+            $( ".hoverText" ).addClass( "foggyBackground" );
         });
-        $('#artists').mouseleave(function () {
+        $('.artistsButton').mouseleave(function () {
             $('.artists').hide();
+            $( ".hoverText" ).removeClass( "foggyBackground" );
         });
         
-        $('#patrons').mouseenter(function () {
+        $('.patronsButton').mouseenter(function () {
+        	$( ".hoverText" ).addClass( "foggyBackground" );
             $('.patrons').show();
         });
-        $('#patrons').mouseleave(function () {
+        $('.patronsButton').mouseleave(function () {
             $('.patrons').hide();
+            $( ".hoverText" ).removeClass( "foggyBackground" );
         });
           
-        $('#model').mouseenter(function () {
+        $('.modelButton').mouseenter(function () {
+        	$( ".hoverText" ).addClass( "foggyBackground" );
             $('.model').show();
         });
-        $('#model').mouseleave(function () {
+        $('.modelButton').mouseleave(function () {
             $('.model').hide();
+            $( ".hoverText" ).removeClass( "foggyBackground" );
         });
         
 });
